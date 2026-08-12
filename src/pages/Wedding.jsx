@@ -133,7 +133,33 @@ export default function Wedding() {
     setMuted(!muted);
   };
 
-  const whatsappUrl = `https://wa.me/917396756920?text=${encodeURIComponent("Hi, I would like to know more about the Sirisha & Manoj Reddy wedding invitation.")}`;
+ const whatsappUrl = `https://wa.me/917396756920?text=${encodeURIComponent("Hi, I want this type of invitation. May I know the details and price?")}`;
+  const sendRsvpToBride = () => {
+  if (!rsvpStatus) {
+    alert("Please select Joyfully Accept or Regretfully Decline.");
+    return;
+  }
+
+  if (!rsvpName.trim()) {
+    alert("Please enter your name.");
+    return;
+  }
+
+  const rsvpMessage = `💍 Wedding RSVP – Sirisha & Manoj Reddy
+
+👤 Name: ${rsvpName}
+💌 RSVP: ${rsvpStatus === 'accept' ? 'Joyfully Accept' : 'Regretfully Decline'}
+📝 Message: ${rsvpMsg || 'No message provided'}
+
+📅 Wedding Date: 28 August 2026`;
+
+  const brideWhatsAppUrl =
+    `https://wa.me/919390598056?text=${encodeURIComponent(rsvpMessage)}`;
+
+  window.open(brideWhatsAppUrl, "_blank");
+
+  setRsvpDone(true);
+};
   const mapUrl =
   "https://maps.app.goo.gl/fVuZy78abAnKBhiP7?g_st=aw";
 
@@ -492,16 +518,24 @@ export default function Wedding() {
                         style={{ background: 'rgba(0,0,0,0.4)', border: `1px solid ${goldDim}`, color: cream, fontFamily: "'EB Garamond', serif", fontSize: 16 }} />
                     </div>
                     <div className="grid grid-cols-2 gap-3">
-                      <button onClick={() => rsvpName && setRsvpDone(true)}
+                      <button
+                        onClick={sendRsvpToBride}
                         className="py-3 rounded-lg text-xs flex items-center justify-center gap-2"
                         style={{ background: `linear-gradient(135deg, #b8860b, #8b6914)`, color: gold, fontFamily: "'Cinzel', serif", letterSpacing: '0.2em' }}>
                         <Send size={14} /> SEND RSVP
                       </button>
-                      <a href={whatsappUrl} target="_blank" rel="noopener noreferrer"
-                        className="py-3 rounded-lg text-xs flex items-center justify-center gap-2"
-                        style={{ background: '#25D366', color: '#fff', fontFamily: "'Cinzel', serif", letterSpacing: '0.15em' }}>
-                        <MessageCircle size={14} /> SHARE ON WHATSAPP
-                      </a>
+                      <button
+  onClick={sendRsvpToBride}
+  className="py-3 rounded-lg text-xs flex items-center justify-center gap-2"
+  style={{
+    background: '#25D366',
+    color: '#fff',
+    fontFamily: "'Cinzel', serif",
+    letterSpacing: '0.15em'
+  }}
+>
+  <MessageCircle size={14} /> SHARE ON WHATSAPP
+</button>
                     </div>
                   </div>
                 )}
