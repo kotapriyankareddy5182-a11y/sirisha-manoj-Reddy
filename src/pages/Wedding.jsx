@@ -12,7 +12,9 @@ const COUPLE3 = "https://media.base44.com/images/public/69fedcc55e753ef411990907
 const COUPLE4 = "https://media.base44.com/images/public/69fedcc55e753ef411990907/9372bb384_image.png";
 const COUPLE5 = "https://media.base44.com/images/public/69fedcc55e753ef411990907/a31485fa1_image.png";
 
-const WEDDING_DATE = new Date('2026-08-28T23:36:00');
+const WEDDING_DATE = new Date(
+  '2026-08-28T23:36:00+05:30'
+);
 
 function getTimeLeft() {
   const diff = WEDDING_DATE - new Date();
@@ -141,7 +143,8 @@ export default function Wedding() {
   };
 
   const whatsappUrl = `https://wa.me/917396756920?text=${encodeURIComponent("Hi, I would like to know more about the Sirisha & Manoj Reddy wedding invitation.")}`;
-  const mapUrl = "https://www.google.com/maps/search/Zuvvaleru+Village+Podili+Mandal+Markapur+District";
+  const mapUrl =
+  "https://maps.app.goo.gl/fVuZy78abAnKBhiP7?g_st=aw";
 
   return (
     <div style={{ background: bg, minHeight: '100vh', color: cream, fontFamily: "'EB Garamond', serif" }}>
