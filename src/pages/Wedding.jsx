@@ -12,7 +12,7 @@ const COUPLE3 = "https://media.base44.com/images/public/69fedcc55e753ef411990907
 const COUPLE4 = "https://media.base44.com/images/public/69fedcc55e753ef411990907/9372bb384_image.png";
 const COUPLE5 = "https://media.base44.com/images/public/69fedcc55e753ef411990907/a31485fa1_image.png";
 
-const WEDDING_DATE = new Date('2026-02-25T09:00:00');
+const WEDDING_DATE = new Date('2026-08-28T23:36:00');
 
 function getTimeLeft() {
   const diff = WEDDING_DATE - new Date();
@@ -56,23 +56,19 @@ function CountdownBox({ value, label }) {
 }
 
 const events = [
-  { icon: '🌼', label: 'PURITY & JOY', name: 'Haldi Ceremony', desc: 'Auspicious turmeric ceremony with family blessings.', date: 'Sunday, 23 Feb · Morning' },
-  { icon: '🌿', label: 'ART & LOVE', name: 'Mehandi', desc: "Intricate henna adorning the bride's hands with love.", date: 'Sunday, 23 Feb · Evening' },
-  { icon: '🎶', label: 'MUSIC & DANCE', name: 'Sangeet', desc: 'A night of music, dance and celebration.', date: 'Monday, 24 Feb · Evening' },
-  { icon: '🙏', label: 'SACRED VOWS', name: 'Wedding Ceremony', desc: 'Sacred mantras and saat pheras — a new journey begins.', date: 'Tuesday, 25 Feb · Muhurtham' },
-  { icon: '🥂', label: 'GRAND CELEBRATION', name: 'Reception', desc: 'A grand evening of dining and celebrating the newlyweds.', date: 'Tuesday, 25 Feb · Evening' },
+  { icon: '🙏', label: 'SACRED MUHURTAM', name: 'Wedding Ceremony', desc: 'The auspicious wedding ceremony begins at 11:36 PM.', date: 'Friday, 28 Aug · 11:36 PM' },
+  { icon: '🍽️', label: 'FAMILY LUNCH', name: 'Lunch', desc: 'Lunch for family and friends at the bride’s residence.', date: 'Friday, 28 Aug · 12:30 PM onwards' },
 ];
 
 const galleryImages = [
-  COUPLE1, 
-  COUPLE2, 
-  COUPLE3, 
-  COUPLE4,
-  "/images/mem2.png", 
-  "/images/mem3.png", 
-  "/images/mem6.jpg",
-  "/images/mem7.jpg",
-  "/images/mem8.jpg"
+  '/images/main-couple.jpg',
+  '/images/bride.jpg',
+  '/images/groom.jpg',
+  '/images/gallery-1.jpg',
+  '/images/gallery-2.jpg',
+  '/images/gallery-3.jpg',
+  '/images/gallery-4.jpg',
+  '/images/gallery-5.jpg'
 ];
 
 export default function Wedding() {
@@ -144,8 +140,8 @@ export default function Wedding() {
     setMuted(!muted);
   };
 
-  const whatsappUrl = `https://wa.me/917396756920?text=${encodeURIComponent("hi i like this templete and i want this type of templete")}`;
-  const mapUrl = "https://www.google.com/maps/search/Sita+Rama+Kalyana+Mandapam+Giddalur+Prakasam+District";
+  const whatsappUrl = `https://wa.me/917396756920?text=${encodeURIComponent("Hi, I would like to know more about the Sirisha & Manoj Reddy wedding invitation.")}`;
+  const mapUrl = "https://www.google.com/maps/search/Zuvvaleru+Village+Podili+Mandal+Markapur+District";
 
   return (
     <div style={{ background: bg, minHeight: '100vh', color: cream, fontFamily: "'EB Garamond', serif" }}>
@@ -195,14 +191,14 @@ export default function Wedding() {
         <motion.div initial={{ opacity: 0, scale: 0.85 }} animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 1.4, duration: 1.2 }} className="text-center z-10 my-2">
           <h1 style={{ fontFamily: "'Playfair Display', serif", fontStyle: 'italic', fontSize: 'clamp(52px,12vw,110px)', fontWeight: 400, color: creamYellow, textShadow: `0 2px 30px rgba(253,232,181,0.3)`, lineHeight: 1.1 }}>
-            Pooja<span style={{ fontWeight: 300, color: creamYellow }}> &amp; </span>Ashok
+            Sirisha<span style={{ fontWeight: 300, color: creamYellow }}> &amp; </span>Manoj Reddy
           </h1>
         </motion.div>
 
         <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1.8 }}
           className="flex items-center gap-4 my-4 z-10">
           <div style={{ height: 1, width: 60, background: goldDim }} />
-          <p style={{ ...subLabel, fontSize: 12 }}>Thursday, 25 February 2026 · Muhurtham</p>
+          <p style={{ ...subLabel, fontSize: 12 }}>Friday, 28 August 2026 · 11:36 PM · Muhurtham</p>
           <div style={{ height: 1, width: 60, background: goldDim }} />
         </motion.div>
 
@@ -251,8 +247,8 @@ export default function Wedding() {
                   >
                     {/* The newly uploaded couple portrait */}
                     <img 
-                      src="/images/new-couple-portrait.png" 
-                      alt="Pooja and Ashok" 
+                      src="/images/main-couple.jpg" 
+                      alt="Sirisha and Manoj Reddy" 
                       className="w-full max-w-2xl object-contain drop-shadow-2xl rounded-2xl" 
                     />
                     
@@ -268,9 +264,9 @@ export default function Wedding() {
                       }}
                       className="leading-none flex items-center justify-center gap-3"
                     >
-                      Pooja 
+                      Sirisha 
                       <span className="animate-pulse" style={{ fontSize: '0.8em' }}>❤️</span> 
-                      Ashok
+                      Manoj Reddy
                     </h2>
                   </motion.div>
 
@@ -285,8 +281,8 @@ export default function Wedding() {
                     <div className="relative w-[220px] h-[220px] md:w-[260px] md:h-[260px] mx-auto flex items-center justify-center mb-6">
                       <div className="absolute inset-[10px] rounded-full overflow-hidden shadow-2xl">
                         <img 
-                          src="/images/circle-groom.png" 
-                          alt="Groom Ashok" 
+                          src="/images/groom.jpg" 
+                          alt="Groom Manoj Reddy" 
                           className="w-full h-full object-cover object-top" 
                         />
                       </div>
@@ -300,9 +296,9 @@ export default function Wedding() {
                       />
                       <div className="absolute inset-[6px] rounded-full pointer-events-none" style={{ border: `1px solid ${goldDim}` }} />
                     </div>
-                    <h3 style={{ ...sectionTitle, fontSize: 26, fontFamily: "'Cinzel', serif", letterSpacing: '0.15em' }}>ASHOK</h3>
+                    <h3 style={{ ...sectionTitle, fontSize: 26, fontFamily: "'Cinzel', serif", letterSpacing: '0.15em' }}>MANOJ REDDY</h3>
                     <p style={{ ...subLabel, marginTop: 6 }}>Son of</p>
-                    <p className="mt-1 italic" style={{ color: cream, fontSize: 15 }}>Sri Ankireddy &amp; Smt. Lakshmi Devi</p>
+                    <p className="mt-1 italic" style={{ color: cream, fontSize: 15 }}>Sri Shagamreddy Peddireddy &amp; Smt. Ademma</p>
                   </motion.div>
 
                   {/* Bride */}
@@ -311,8 +307,8 @@ export default function Wedding() {
                     <div className="relative w-[220px] h-[220px] md:w-[260px] md:h-[260px] mx-auto flex items-center justify-center mb-6">
                       <div className="absolute inset-[10px] rounded-full overflow-hidden shadow-2xl">
                         <img 
-                          src="/images/circle-bride.jpg" 
-                          alt="Bride Pooja" 
+                          src="/images/bride.jpg" 
+                          alt="Bride Sirisha" 
                           className="w-full h-full object-cover object-top" 
                         />
                       </div>
@@ -326,9 +322,9 @@ export default function Wedding() {
                       />
                       <div className="absolute inset-[6px] rounded-full pointer-events-none" style={{ border: `1px solid ${goldDim}` }} />
                     </div>
-                    <h3 style={{ ...sectionTitle, fontSize: 26, fontFamily: "'Cinzel', serif", letterSpacing: '0.15em' }}>POOJA</h3>
+                    <h3 style={{ ...sectionTitle, fontSize: 26, fontFamily: "'Cinzel', serif", letterSpacing: '0.15em' }}>SIRISHA</h3>
                     <p style={{ ...subLabel, marginTop: 6 }}>Daughter of</p>
-                    <p className="mt-1 italic" style={{ color: cream, fontSize: 15 }}>Sri Ramakrishna Reddy &amp; Smt. Srikala</p>
+                    <p className="mt-1 italic" style={{ color: cream, fontSize: 15 }}>Sri Bode Venkateswara Reddy &amp; Smt. Sivaleela</p>
                   </motion.div>
                 </div>
               </div>
@@ -343,7 +339,7 @@ export default function Wedding() {
                   <p className="italic mt-2" style={{ color: cream, fontSize: 15 }}>Every ritual, every moment — beautifully planned for family and friends.</p>
                   {divider}
                   <p style={{ color: goldDim, fontSize: 13, fontFamily: "'Cinzel', serif", letterSpacing: '0.2em' }}>
-                    Sita Rama Kalyana Mandapam, Giddalur, Prakasam District
+                    Zuvvaleru Village, Podili Mandal, Markapur District
                   </p>
                 </div>
 
@@ -410,12 +406,12 @@ export default function Wedding() {
               </div>
             </section>
 
-            {/* ═══════════════ VENUE & LIVE STREAM ═══════════════ */}
+            {/* ═══════════════ VENUE & LUNCH ═══════════════ */}
             <section className="py-20 px-4">
               <div className="max-w-5xl mx-auto">
                 <div className="text-center mb-12">
                   <p style={subLabel}>Venue Guide</p>
-                  <h2 style={{ ...sectionTitle, fontSize: 'clamp(28px,5vw,48px)', fontWeight: 600 }}>Venue &amp; Live Stream</h2>
+                  <h2 style={{ ...sectionTitle, fontSize: 'clamp(28px,5vw,48px)', fontWeight: 600 }}>Venue &amp; Lunch</h2>
                   <p className="italic mt-2" style={{ color: cream, fontSize: 15 }}>Save the date and arrive with ease.</p>
                   {divider}
                 </div>
@@ -434,8 +430,8 @@ export default function Wedding() {
                   <div className="rounded-2xl p-8 text-center" style={{ background: cardBg, border: `1px solid ${goldDim}` }}>
                     <MapPin size={36} color={gold} className="mx-auto mb-4" />
                     <h3 style={{ ...sectionTitle, fontSize: 22, fontFamily: "'Cinzel', serif" }}>WEDDING VENUE</h3>
-                    <p className="mt-3 italic" style={{ color: cream }}>Sita Rama Kalyana Mandapam</p>
-                    <p style={{ color: cream, fontSize: 13 }}>Giddalur, Prakasam District</p>
+                    <p className="mt-3 italic" style={{ color: cream }}>Groom's Residence</p>
+                    <p style={{ color: cream, fontSize: 13 }}>Zuvvaleru Village, Podili Mandal, Markapur District</p>
                     <a href={mapUrl} target="_blank" rel="noopener noreferrer"
                       className="inline-flex items-center gap-2 mt-6 px-8 py-3 rounded-full text-xs"
                       style={{ background: `linear-gradient(135deg, ${gold}, #b8860b)`, color: bg, fontFamily: "'Cinzel', serif", letterSpacing: '0.2em' }}>
@@ -444,18 +440,10 @@ export default function Wedding() {
                   </div>
                   <div className="rounded-2xl p-8 text-center" style={{ background: cardBg, border: `1px solid ${goldDim}` }}>
                     <Video size={36} color={gold} className="mx-auto mb-4" />
-                    <h3 style={{ ...sectionTitle, fontSize: 22, fontFamily: "'Cinzel', serif" }}>LIVE STREAM</h3>
-                    <p className="mt-3 italic" style={{ color: cream }}>Can't make it in person?</p>
-                    <p style={{ color: cream, fontSize: 13 }}>Watch the ceremony live on February 25, 2026</p>
-                    <a 
-                      href="https://youtu.be/KvvKTLWSYaM?si=S1wrCamFgobHgeSd" 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 mt-6 px-8 py-3 rounded-full text-xs"
-                      style={{ border: `1px solid ${gold}`, color: gold, fontFamily: "'Cinzel', serif", letterSpacing: '0.2em', background: 'transparent' }}
-                    >
-                      <Video size={14} /> WATCH LIVE
-                    </a>
+                    <h3 style={{ ...sectionTitle, fontSize: 22, fontFamily: "'Cinzel', serif" }}>LUNCH VENUE</h3>
+                    <p className="mt-3 italic" style={{ color: cream }}>Bride's Residence</p>
+                    <p style={{ color: cream, fontSize: 13 }}>V. Reddy Palem Village, Rompicharla Mandal, Palnadu District</p>
+                    <p className="mt-5" style={{ color: gold, fontFamily: "'Cinzel', serif", fontSize: 11, letterSpacing: '0.12em' }}>FRIDAY, 28 AUGUST 2026 · 12:30 PM ONWARDS</p>
                   </div>
                 </div>
               </div>
@@ -528,12 +516,12 @@ export default function Wedding() {
 
             {/* ═══════════════ FOOTER ═══════════════ */}
             <footer className="py-12 text-center px-4" style={{ background: 'rgba(0,0,0,0.5)', borderTop: `1px solid ${goldDim}` }}>
-              <p style={{ fontFamily: "'Playfair Display', serif", fontStyle: 'italic', fontSize: 36, color: cream }}>Pooja <span style={{ color: gold }}>&amp;</span> Ashok</p>
+              <p style={{ fontFamily: "'Playfair Display', serif", fontStyle: 'italic', fontSize: 36, color: cream }}>Sirisha <span style={{ color: gold }}>&amp;</span> Manoj Reddy</p>
               <p className="mt-2" style={{ color: cream, fontFamily: "'Cinzel', serif", fontSize: 11, letterSpacing: '0.3em' }}>
-                25 FEBRUARY 2026 · GIDDALUR, PRAKASAM DISTRICT
+                28 AUGUST 2026 · ZUVVALERU VILLAGE, MARKAPUR DISTRICT
               </p>
               <div style={{ height: 1, background: goldDim, maxWidth: 200, margin: '16px auto' }} />
-              <p style={{ color: goldDim, fontSize: 12 }}>#PoojaWedsAshok</p>
+              <p style={{ color: goldDim, fontSize: 12 }}>#SirishaWedsManoj</p>
             </footer>
 
           </motion.div>
