@@ -4,13 +4,6 @@ import { ChevronDown, Volume2, VolumeX, MessageCircle, MapPin, Video, Send, Chec
 
 const GANESH = "https://media.base44.com/images/public/69fedcc55e753ef411990907/8a047269f_image.png";
 const ELEPHANTS = "https://media.base44.com/images/public/69fedcc55e753ef411990907/075cc77e3_image.png";
-const GROOM_SOLO = "https://media.base44.com/images/public/69fedcc55e753ef411990907/3cc2e7a63_image.png";
-const BRIDE_SOLO = "https://media.base44.com/images/public/69fedcc55e753ef411990907/548c70a75_image.png";
-const COUPLE1 = "https://media.base44.com/images/public/69fedcc55e753ef411990907/05388be04_image.png";
-const COUPLE2 = "https://media.base44.com/images/public/69fedcc55e753ef411990907/1276c76a8_image.png";
-const COUPLE3 = "https://media.base44.com/images/public/69fedcc55e753ef411990907/acd6f02a0_image.png";
-const COUPLE4 = "https://media.base44.com/images/public/69fedcc55e753ef411990907/9372bb384_image.png";
-const COUPLE5 = "https://media.base44.com/images/public/69fedcc55e753ef411990907/a31485fa1_image.png";
 
 const WEDDING_DATE = new Date(
   '2026-08-28T23:36:00+05:30'
@@ -63,16 +56,14 @@ const events = [
 ];
 
 const galleryImages = [
-  '/images/main-couple.jpg',
-  '/images/bride.jpg',
-  '/images/groom.jpg',
-  '/images/gallery-1.jpg',
-  '/images/gallery-2.jpg',
-  '/images/gallery-3.jpg',
-  '/images/gallery-4.jpg',
-  '/images/gallery-5.jpg'
+  '/wedding-images/bride.jpeg',
+  '/wedding-images/groom.jpeg',
+  '/wedding-images/couple.jpeg',
+  '/wedding-images/main1.jpeg',
+  '/wedding-images/main2.jpeg',
+  '/wedding-images/main3.jpeg',
+  '/wedding-images/main4.jpeg'
 ];
-
 export default function Wedding() {
   const [opened, setOpened] = useState(false);
   const [muted, setMuted] = useState(true);
@@ -249,11 +240,11 @@ export default function Wedding() {
                     className="relative mx-auto flex flex-col items-center justify-center w-full max-w-4xl my-8"
                   >
                     {/* The newly uploaded couple portrait */}
-                    <img 
-                      src="/images/main-couple.jpg" 
-                      alt="Sirisha and Manoj Reddy" 
-                      className="w-full max-w-2xl object-contain drop-shadow-2xl rounded-2xl" 
-                    />
+                   <img 
+  src="/wedding-images/couple.jpeg"
+  alt="Sirisha and Manoj Reddy"
+  className="w-full max-w-2xl object-contain drop-shadow-2xl rounded-2xl"
+/>
                     
                     {/* Text below the image with love symbol */}
                     <h2 
@@ -284,10 +275,10 @@ export default function Wedding() {
                     <div className="relative w-[220px] h-[220px] md:w-[260px] md:h-[260px] mx-auto flex items-center justify-center mb-6">
                       <div className="absolute inset-[10px] rounded-full overflow-hidden shadow-2xl">
                         <img 
-                          src="/images/groom.jpg" 
-                          alt="Groom Manoj Reddy" 
-                          className="w-full h-full object-cover object-top" 
-                        />
+ src="/wedding-images/groom.jpeg"
+ alt="Groom Manoj Reddy"
+ className="w-full h-full object-cover object-top"
+/>
                       </div>
                       
                       {/* Simple rotating golden rings */}
@@ -310,7 +301,7 @@ export default function Wedding() {
                     <div className="relative w-[220px] h-[220px] md:w-[260px] md:h-[260px] mx-auto flex items-center justify-center mb-6">
                       <div className="absolute inset-[10px] rounded-full overflow-hidden shadow-2xl">
                         <img 
-                          src="/images/bride.jpg" 
+                          src="/wedding-images/bride.jpeg" 
                           alt="Bride Sirisha" 
                           className="w-full h-full object-cover object-top" 
                         />
