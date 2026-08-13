@@ -162,9 +162,7 @@ export default function Wedding() {
 };
   const mapUrl =
   "https://maps.app.goo.gl/fVuZy78abAnKBhiP7?g_st=aw";
-  const mapUrl=
-    "https://www.google.com/maps?q=16.3001242,79.927497&z=17&hl=en";
-
+  
   return (
     <div style={{ background: bg, minHeight: '100vh', color: cream, fontFamily: "'EB Garamond', serif" }}>
 
