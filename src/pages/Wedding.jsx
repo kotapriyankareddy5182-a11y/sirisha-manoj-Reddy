@@ -211,7 +211,7 @@ export default function Wedding() {
         <motion.div initial={{ opacity: 0, scale: 0.85 }} animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 1.4, duration: 1.2 }} className="text-center z-10 my-2">
           <h1 style={{ fontFamily: "'Playfair Display', serif", fontStyle: 'italic', fontSize: 'clamp(52px,12vw,110px)', fontWeight: 400, color: creamYellow, textShadow: `0 2px 30px rgba(253,232,181,0.3)`, lineHeight: 1.1 }}>
-            Sirisha<span style={{ fontWeight: 300, color: creamYellow }}> &amp; </span>Manoj Reddy
+            Manoj Reddy<span style={{ fontWeight: 300, color: creamYellow }}> &amp; </span>Sirisha
           </h1>
         </motion.div>
 
@@ -549,7 +549,7 @@ export default function Wedding() {
                 28 AUGUST 2026 · ZUVVALERU VILLAGE, MARKAPUR DISTRICT
               </p>
               <div style={{ height: 1, background: goldDim, maxWidth: 200, margin: '16px auto' }} />
-              <p style={{ color: goldDim, fontSize: 12 }}>#SirishaWedsManoj</p>
+              <p style={{ color: goldDim, fontSize: 12 }}>#ManojReddyWedsSirisha</p>
             </footer>
 
           </motion.div>
