@@ -268,7 +268,7 @@ export default function Wedding() {
                     {/* The newly uploaded couple portrait */}
                    <img 
   src="/wedding-images/couple.jpeg"
-  alt="Sirisha and Manoj Reddy"
+  alt="Manoj Reddy and Sirisha"
   className="w-full max-w-2xl object-contain drop-shadow-2xl rounded-2xl"
 />
                     
@@ -284,9 +284,9 @@ export default function Wedding() {
                       }}
                       className="leading-none flex items-center justify-center gap-3"
                     >
-                      Sirisha 
-                      <span className="animate-pulse" style={{ fontSize: '0.8em' }}>❤️</span> 
                       Manoj Reddy
+                      <span className="animate-pulse" style={{ fontSize: '0.8em' }}>❤️</span> 
+                      Sirisha
                     </h2>
                   </motion.div>
 
